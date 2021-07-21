@@ -1,17 +1,17 @@
 name: Actions on Staging Branch
-on: 
-  pull_request: 
+on:
+  pull_request:
     branches:
       - staging
-jobs: 
+
+jobs:
   Test and Deploy:
     environment: Test
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a '${{ github.event_name }}' event."
-      - run: echo "🎉 The job was triggered by '${{ github.base_ref }}' branch."    
-      - run: echo "🎉 A repository secret is '${{ secrets.DEMO_KEY }}'."    
-      - run: echo "🎉 A environment secret is '${{ secrets.TEST_DEMO_KEY }}'."    
+      - run: echo "🎉 The job was triggered by '${{ github.base_ref }}' branch."
+      - run: echo "🎉 A repository secret is '${{ secrets.DEMO_KEY }}'."
+      - run: echo "🎉 A environment secret is '${{ secrets.TEST_DEMO_KEY }}'."
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - run: echo "🍏 This job's status is '${{ job.status }}.'"
-
