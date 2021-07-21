@@ -1,11 +1,8 @@
-name: Actions on Develop Branch
+name: Actions on Staging Branch
 on: 
-  push: 
-    branches:
-      - develop
   pull_request: 
     branches:
-      - develop
+      - staging
 
 jobs: 
   Build:
