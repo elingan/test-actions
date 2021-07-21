@@ -2,8 +2,12 @@
 
 name: Actions on Develop Branch
 on: 
-  push: develop
-  pull_request: develop
+  push: 
+    branches:
+      - develop
+  pull_request: 
+    branches:
+      - develop
 
 jobs: 
   Build:
