@@ -13,8 +13,6 @@ jobs:
     steps:
       - run: echo "🎉 The job was automatically triggered by a '${{ github.event_name }}' event."
       - run: echo "🎉 The job was triggered by '${{ github.ref }}'' branch."    
-      - env:
-          DEMO_KEY: '${{ secrets.DEMO_KEY }}'
       - run: echo "🎉 The secret key is '${{ env.DEMO_KEY }}'."    
       - name: Check out repository code
       - uses: actions/checkout@v2
