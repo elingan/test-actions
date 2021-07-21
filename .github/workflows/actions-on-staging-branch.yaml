@@ -3,9 +3,9 @@ on:
   pull_request: 
     branches:
       - staging
-
+      
 jobs: 
-  Test, Build and Deploy:
+  Test and Deploy:
     environment: Test
     runs-on: ubuntu-latest
     steps:
