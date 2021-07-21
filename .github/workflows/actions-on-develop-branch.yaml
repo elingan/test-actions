@@ -13,13 +13,13 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - env:
-          DEMO_KEY: $DEMO_KEY
       - run: echo "🎉 The job was automatically triggered by a '${{ github.event_name }}' event."
       - run: echo "🎉 The job was triggered by '${{ github.ref }}'' branch."    
-      - run: echo "🎉 The secret key is '${{ $DEMO_KEY }}'."    
       - name: Check out repository code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          DEMO_KEY: '${{ secrets.DEMO_KEY }}'
+      - run: echo "🎉 The secret key is '${{ $DEMO_KEY }}'."    
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - run: echo "🍏 This job's status is '${{ job.status }}.'"
 
