@@ -5,7 +5,7 @@ on:
       - staging
 
 jobs: 
-  Build:
+  Test, Build and Deploy:
     environment: Test
     runs-on: ubuntu-latest
     steps:
