@@ -3,6 +3,7 @@ on:
   pull_request: 
     branches:
       - staging
+      
 jobs: 
   Test and Deploy:
     environment: Test
