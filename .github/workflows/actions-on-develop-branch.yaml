@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           DEMO_KEY: '${{ secrets.DEMO_KEY }}'
-      - run: echo "🎉 The secret key is '${{ $DEMO_KEY }}'."    
+        run: echo "🎉 The secret key is '${{ $DEMO_KEY }}'."    
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - run: echo "🍏 This job's status is '${{ job.status }}.'"
 
