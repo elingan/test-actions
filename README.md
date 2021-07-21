@@ -3,7 +3,7 @@
 Test actions
 
 ![example workflow](https://github.com/elingan/test-actions/actions/workflows/github-actions-demo.yaml/badge.svg)
-![example branch parameter](https://github.com/elingan/test-actions/actions/workflows/github-actions-demo.yaml/badge.svg?branch=develop)
+![example branch parameter](https://github.com/elingan/test-actions/actions/workflows/actions-on-develop-branch.yaml/badge.svg?branch=develop)
 ![example event parameter](https://github.com/elingan/test-actions/actions/workflows/github-actions-demo.yaml/badge.svg?event=pull_request)
 
 

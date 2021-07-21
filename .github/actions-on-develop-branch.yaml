@@ -1,6 +1,6 @@
 # Create github action on develop branch 
 
-name: Github Actions Demo
+name: Actions on Develop Branch
 on: 
   push:
     branches: [develop]
