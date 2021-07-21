@@ -1,6 +1,13 @@
 name: Github Actions Demo
-on: [push]
-jobs: 
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+# on: [push]
+jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
