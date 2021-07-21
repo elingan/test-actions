@@ -2,22 +2,17 @@
 
 name: Actions on Develop Branch
 on: 
-  push:
-    branches: [develop]
-  pull_request:
-    branches: [develop]
+  push: develop
+  pull_request: develop
 
 jobs: 
   Build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.branch_name }} branch."    
+      - run: echo "🎉 The job was automatically triggered by a '${{ github.event_name }}' event."
+      - run: echo "🎉 The job was triggered by ${{ github.ref }} branch."    
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "🍏 This job's status is '${{ job.status }}.'"
 
